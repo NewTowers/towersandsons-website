@@ -3,45 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Towers & Sons LLC</title>
+    <title>Contact | Towers & Sons LLC</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Towers & Sons LLC Logo" class="logo" />
+        <img src="images/Towers-n-Son-LLC-logo.jpg" alt="Towers & Sons LLC Logo" class="logo" />
         <h1>Towers & Sons LLC</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="about.html">About</a>
             <a href="contact.html">Contact</a>
-            <a href="quote.html">Quote</a>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <div style="text-align:center;margin-top:20px;">
+            <img src="images/Contact us box truck.JPG" alt="Box Truck Contact" style="max-width:100%;height:auto;border-radius:10px;">
+        </div>
+        <section>
             <h2>Contact Us</h2>
-            <img src="images/contact-office.jpg" alt="Company office" />
-        </section>
-        <section>
-            <h3>Get in Touch</h3>
-            <p>We're ready to help with your logistics needs. Reach out to our team by phone, email, or the contact form below.</p>
+            <p>Ready to move your freight or have questions? Contact us using the information below or fill out our quick contact form!</p>
             <ul>
-                <li><strong>Phone:</strong> (714) 367-4457</li>
                 <li><strong>Email:</strong> info@towersandsons.com</li>
-                <li><strong>Address:</strong> Santa Ana, CA 92701</li>
+                <li><strong>Phone:</strong> (888) 555-1234</li>
+                <li><strong>Address:</strong> 123 Logistics Ave, Los Angeles, CA 90001</li>
             </ul>
-        </section>
-        <section>
-            <h3>Contact Form</h3>
-            <form>
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message"></textarea><br>
-                <button type="submit">Send Message</button>
+            <form action="mailto:info@towersandsons.com" method="post" enctype="text/plain">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br>
+                <input type="submit" value="Send">
             </form>
         </section>
     </main>
