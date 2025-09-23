@@ -135,6 +135,40 @@ button:hover, button:focus {
     background: var(--accent);
 }
 
+/* Microsoft Form Embed Styles */
+.form-section {
+    margin: 32px 0;
+}
+
+.microsoft-form-embed {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 16px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(26, 42, 73, 0.1);
+}
+
+.microsoft-form-embed iframe {
+    border: none;
+    border-radius: 8px;
+    min-height: 600px;
+}
+
+/* Responsive iframe handling */
+@media (max-width: 768px) {
+    .microsoft-form-embed iframe {
+        min-height: 700px;
+    }
+}
+
+@media (max-width: 480px) {
+    .microsoft-form-embed iframe {
+        min-height: 800px;
+    }
+}
+
 footer {
     background: var(--navy);
     color: var(--white);
