@@ -26,15 +26,15 @@
         <section>
             <h3>Fast & Free Quotes</h3>
             <p>Fill out the form below and our team will contact you with a customized quote for your shipment.</p>
-            <form>
+            <form action="#" method="post">
                 <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
+                <input type="text" id="name" name="name" required><br>
                 <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
+                <input type="email" id="email" name="email" required><br>
                 <label for="phone">Phone:</label><br>
-                <input type="text" id="phone" name="phone"><br>
+                <input type="text" id="phone" name="phone" required><br>
                 <label for="details">Shipment Details:</label><br>
-                <textarea id="details" name="details"></textarea><br>
+                <textarea id="details" name="details" required></textarea><br>
                 <button type="submit">Request Quote</button>
             </form>
         </section>
