@@ -5,6 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Towers & Sons LLC</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .about-hero-img, .team-photo {
+            max-width: 100%;
+            border-radius: 18px;
+            box-shadow: 0 6px 32px rgba(30, 64, 175, 0.10), 0 2px 12px rgba(0,0,0,0.08);
+            margin: 28px auto 18px auto;
+            display: block;
+        }
+        .team-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 2px 18px rgba(30,64,175,0.07), 0 1px 8px rgba(0,0,0,0.07);
+            padding: 38px 28px 32px 28px;
+            max-width: 900px;
+            margin: 44px auto 34px auto;
+            text-align: center;
+        }
+        .about-section {
+            max-width: 900px;
+            margin: 32px auto;
+            padding: 0 18px;
+        }
+        .about-values-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+        }
+        .about-values-list li {
+            background: #f0f4fa;
+            border-radius: 10px;
+            padding: 12px 26px;
+            font-weight: 600;
+            color: #204080;
+            box-shadow: 0 1px 6px rgba(30,64,175,0.05);
+        }
+        .about-headline {
+            font-size: 2.3em;
+            font-weight: 700;
+            letter-spacing: -1px;
+            color: #234;
+            margin-bottom: 0.3em;
+        }
+        .about-tagline {
+            font-size: 1.18em;
+            color: #3a5ea8;
+            margin-bottom: 1.4em;
+        }
+        @media (max-width: 700px) {
+            .about-section, .team-card { padding: 0 7px; }
+            .about-values-list { flex-direction: column; align-items: center; }
+            .about-headline { font-size: 1.35em; }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,21 +75,27 @@
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <h2>About Towers & Sons LLC</h2>
-            <img src="images/about-team.jpg" alt="Our logistics team" />
+        <section class="about-section" style="text-align:center;">
+            <div class="about-headline">About Towers & Sons LLC</div>
+            <div class="about-tagline">Delivering excellence and building relationships, one mile at a time.</div>
+            <img src="images/about-team.jpg" alt="Our logistics team" class="about-hero-img" />
         </section>
-        <section>
+        <section class="about-section">
             <h3>Our Story</h3>
-            <p>Founded as a family business, Towers & Sons LLC has grown to serve customers nationwide with integrity, reliability, and a commitment to excellence. We combine tradition with innovation to deliver best-in-class logistics solutions.</p>
+            <p>
+                Founded as a family business, Towers & Sons LLC has grown to serve customers nationwide with integrity, reliability, and a commitment to excellence.
+                We combine tradition with innovation to ensure every load is delivered safely and on time.
+            </p>
         </section>
-        <section>
+        <section class="about-section">
             <h3>Our Mission</h3>
-            <p>To provide safe, efficient, and dependable transportation and logistics services, building lasting partnerships through personalized customer care.</p>
+            <p>
+                To provide safe, efficient, and dependable transportation and logistics services, building lasting partnerships through personalized customer care.
+            </p>
         </section>
-        <section>
+        <section class="about-section">
             <h3>Our Values</h3>
-            <ul>
+            <ul class="about-values-list">
                 <li>Integrity & Trust</li>
                 <li>Customer Focus</li>
                 <li>Safety First</li>
@@ -41,11 +103,15 @@
                 <li>Family-Owned Pride</li>
             </ul>
         </section>
-        <section>
+        <div class="team-card">
             <h3>Meet the Team</h3>
-            <p>Our experienced logistics professionals are dedicated to delivering outstanding results. Every member of our team is committed to your success.</p>
-            <img src="images/about-team2.jpg" alt="Team at work" />
-        </section>
+            <p>
+                Our dedicated logistics professionals bring years of industry experience and a genuine passion for helping our customers succeed.
+                At Towers & Sons, we work hard—and we have fun doing it!
+            </p>
+            <img src="images/about-team2.jpg" alt="Team at work and having fun" class="team-photo" />
+            <p style="font-style:italic; color:#48a;">“Collaboration, pride, and a family spirit: that’s the Towers & Sons difference.”</p>
+        </div>
     </main>
     <footer>
         <p>&copy; 2025 Towers & Sons LLC. All Rights Reserved.</p>
