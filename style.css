@@ -274,14 +274,3 @@ label{ font-weight:700; font-size:.95rem; }
   .about-stats{ grid-template-columns:1fr; }
   .footer-grid{ grid-template-columns:1fr; }
 }
-6) script.js (NEW tiny mobile menu)
-js
-Copy code
-const hamburger = document.getElementById("hamburger");
-const nav = document.getElementById("nav");
-
-if (hamburger && nav) {
-  hamburger.addEventListener("click", () => {
-    nav.classList.toggle("open");
-  });
-}
